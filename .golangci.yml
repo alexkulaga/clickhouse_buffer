@@ -1,0 +1,22 @@
+#linters-settings:
+#  gocritic:
+#    disabled-checks:
+#      - ifElseChain
+linters:
+  enable-all: true
+  disable:
+    - wrapcheck
+    - gomnd
+    - revive
+    - forcetypeassert
+    - stylecheck
+    - funlen
+    - golint
+    - exhaustivestruct
+    - maligned
+    - ifshort
+run:
+  deadline: 5m
+  skip-files:
+    - _test.go
+    - mock.go
